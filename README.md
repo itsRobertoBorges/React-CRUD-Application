@@ -1,4 +1,4 @@
-- 🔭 I’m currently working on **Applying CSS to this application**
+- 🔭 I’m currently working on **applying CSS to this application**
 
 - 📫 How to reach me **robbyborges98@outlook.com**
 
