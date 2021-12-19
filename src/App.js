@@ -43,18 +43,16 @@ class App extends Component {
     this.refs.myForm.reset();
   } 
 
-  handleEdit = (i) => {
-    let employeeData = this.state.employeeData[i];
-    this.refs.txtName.value = this.state.employeeData.name;
-    this.refs.txtLname.value = this.state.employeeData.lname;
-    this.refs.txtAge.value = this.state.employeeData.age;
+  handleEdit=(i) =>{
+    let data = this.state.employeeData[i];
+    this.refs.txtName.value=data.name;
+    this.refs.txtLname.value=data.lname;
+    this.refs.txtAge.value=data.age;
 
     this.setState({
-      employeeData : employeeData,
-      act : 1,
-      index : i
-    })
-    console.log(employeeData)
+     act:1,
+     index:i
+     })
   }
 
   handleDelete = (i) => {
@@ -92,10 +90,10 @@ class App extends Component {
             <td>{data.age}</td>
             <td>{data.lname}</td>
            <td>
-              <button onClick={i => this.handleEdit(i)}>Edit</button>
+              <button onClick={() => this.handleEdit(i)}>Edit</button>
             </td>
             <td>
-              <button onClick={i => this.handleDelete(i)}>Delete</button>
+              <button onClick={() => this.handleDelete(i)}>Delete</button>
             </td>
         </tr>)
         }
