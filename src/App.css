@@ -1,0 +1,28 @@
+.title{
+    text-align: center;
+}
+.formField {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.myForm {
+    margin: 0 auto;
+    width: 50%;
+    background-color: #dfe6e9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.table {
+    box-shadow: 3px 4px 12px 22px #dfe6e9;    
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+}
