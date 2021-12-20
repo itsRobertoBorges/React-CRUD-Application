@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 class App extends Component {
   constructor(){
@@ -67,17 +68,17 @@ class App extends Component {
     let employeeData = this.state.employeeData;
     return (
       <div>
-        <h1>{this.state.title}</h1>
-      <form ref="myForm">
+        <h1 className='title'>{this.state.title}</h1>
+      <form ref="myForm" className='myForm'>
         <label>Name</label>
-        <input type="text" ref="txtName" placeholder="Enter Name"/>
+        <input type="text" ref="txtName" placeholder="Enter Name" className='formField'/>
         <label>Last Name</label>
-        <input type="text" ref="txtLname" placeholder="Enter Last Name"/>
+        <input type="text" ref="txtLname" placeholder="Enter Last Name" className='formField'/>
         <label>Age</label>
         <input type="text" ref="txtAge" placeholder="Enter Age"/>
-        <button onClick={e => this.handleSubmit(e)}>Save</button>
+        <button onClick={e => this.handleSubmit(e)} className='myButton'>Save</button>
       </form>
-      <table>
+      <table className='table'>
         <tr>
           <th>Name</th>
           <th>Age</th>
@@ -90,15 +91,16 @@ class App extends Component {
             <td>{data.age}</td>
             <td>{data.lname}</td>
            <td>
-              <button onClick={() => this.handleEdit(i)}>Edit</button>
+              <button onClick={() => this.handleEdit(i)} className='myButton'>Edit</button>
             </td>
             <td>
-              <button onClick={() => this.handleDelete(i)}>Delete</button>
+              <button onClick={() => this.handleDelete(i)} className='myButton'>Delete</button>
             </td>
         </tr>)
         }
       </table>
-      </div>
+      <a href="https://github.com/itsRobertoBorges" className='link'>Back to Github!</a>
+   </div>  
     );
   }
 }
