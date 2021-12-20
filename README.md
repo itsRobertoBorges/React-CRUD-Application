@@ -1,5 +1,3 @@
-- 🔭 I’m currently working on **applying CSS to this application**
-
 - 📫 How to reach me **robbyborges98@outlook.com**
 
 - 👨‍💻 All of my projects are available at [My Github Page](https://github.com/itsRobertoBorges)
